@@ -60,15 +60,15 @@ describe('User model', () => {
     }    
   })
 
-  test('betaUser should default to false', async () => {
-    const user = await User.create({
-      firstName: 'Tilly',
-      lastName: 'Mills',
-      email: 'tg@gmail.com'
-    })
+  // test('betaUser should default to false', async () => {
+  //   const user = await User.create({
+  //     firstName: 'Tilly',
+  //     lastName: 'Mills',
+  //     email: 'tg@gmail.com'
+  //   })
 
-    expect(user.betaUser).toBe(false)
-  })
+  //   expect(user.betaUser).toBe(false)
+  // })
 
   test('should have correct fields', async () => {
     const now = Date.now()

@@ -1,7 +1,7 @@
 const User = require('./user')
 
 const getUserById = (id) => {
-  return User.findById(id)
+  return User.findById(id).exec()
 }
 
 const getAllUsers = () => {
@@ -12,7 +12,7 @@ const createUser = (userDetails) => {
   return User.create(userDetails)
 }
 const removeUserById = (id) => {
-    return User.removeUserById(id)
+    return User.findOneAndRemove(id)
 }
 
 const updateUserById = (id, update) => {

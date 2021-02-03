@@ -21,7 +21,7 @@ app.post('/todo', async () => {
   const todoToCreate = req.body.todo
 })
 
-connect('mongodb://localhost:27017/intro-to-mongodb')
+connect('mongodb+srv://gabriell:gH9NKTKYUaEaHAUM@cluster0.ktxoz.mongodb.net/test?retryWrites=true&w=majority')
   .then(() => app.listen(4000, () => {
     console.log('server on http://localhost:4000')
   }))
